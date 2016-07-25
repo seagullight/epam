@@ -1,0 +1,88 @@
+body {
+  font-size: 100%;
+  background-color: #399ed4; }
+  body .navbar-fixed-top {
+    height: 100px;
+    padding: 1% 0 1% 0; }
+  body .navbar-brand {
+    width: 50rem;
+    text-align: center; }
+  body svg {
+    width: 100px; }
+  body .navbar-nav {
+    letter-spacing: -2px; }
+  body .navbar-default .navbar-nav li a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black; }
+  body .navbar-default .navbar-nav:first-child li a:hover {
+    color: #399ed4; }
+
+section {
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 100vh;
+  position: relative;
+  padding: 10% 0 15% 0; }
+  section .row {
+    margin-left: 0.001em;
+    margin-right: 0.001em; }
+
+section#dnk {
+  background-image: url(../img/bg.png);
+  margin-top: 100px; }
+  section#dnk .col-md-8 {
+    padding: 0 20% 0 2%;
+    color: white; }
+    section#dnk .col-md-8 a.btn {
+      width: 45%;
+      height: 10vh;
+      background-color: #7f993a;
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 4% 0 3% 0;
+      color: white;
+      margin-top: 10%;
+      font-weight: 700;
+      border-radius: 0; }
+    section#dnk .col-md-8 a.btn:last-child {
+      float: right; }
+    section#dnk .col-md-8 a:hover {
+      background-color: #a3c644; }
+  section#dnk .col-md-4 {
+    padding: 0; }
+  section#dnk h1 {
+    font-size: 6rem;
+    margin-bottom: 5%; }
+  section#dnk p {
+    font-size: 2.2rem;
+    padding: 0 10% 0 0; }
+    section#dnk p .glyphicon {
+      margin-left: 5%; }
+  section#dnk .col-md-4 {
+    padding: 0; }
+    section#dnk .col-md-4 .adve {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5% 10% 10% 10%;
+      text-align: center;
+      width: 90%;
+      float: right; }
+      section#dnk .col-md-4 .adve h2 {
+        font-weight: 800;
+        margin-bottom: 10%; }
+      section#dnk .col-md-4 .adve a.btn {
+        width: 50%;
+        height: 7vh;
+        background-color: #7f993a;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 4% 0 3% 0;
+        color: white;
+        margin-top: 15%;
+        font-weight: 700;
+        border-radius: 0; }
+      section#dnk .col-md-4 .adve a:hover {
+        background-color: #a3c644; }
+
+/*# sourceMappingURL=style.css.map */
