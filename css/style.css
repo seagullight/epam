@@ -1,6 +1,6 @@
 body {
   font-size: 100%;
-  background-color: #399ed4; }
+  background-color: #39c2d7; }
   body .navbar-fixed-top {
     height: 100px;
     padding: 1% 0 1% 0; }
@@ -17,13 +17,11 @@ body {
     font-weight: 500;
     color: black; }
   body .navbar-default .navbar-nav:first-child li a:hover {
-    color: #399ed4; }
+    color: #39c2d7; }
 
 section {
   margin-right: -15px;
   margin-left: -15px;
-  height: 100vh;
-  position: relative;
   padding: 10% 0 15% 0; }
   section .row {
     margin-left: 0.001em;
@@ -31,7 +29,9 @@ section {
 
 section#dnk {
   background-image: url(../img/bg.png);
-  margin-top: 100px; }
+  margin-top: 100px;
+  height: 100vh;
+  position: relative; }
   section#dnk .col-md-8 {
     padding: 0 20% 0 2%;
     color: white; }
@@ -84,5 +84,247 @@ section#dnk {
         border-radius: 0; }
       section#dnk .col-md-4 .adve a:hover {
         background-color: #a3c644; }
+
+section#whatdo {
+  padding: 5% 10% 0 10%; }
+  section#whatdo ul.nav {
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 0; }
+    section#whatdo ul.nav li {
+      text-align: center;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      width: 200px;
+      height: 50px; }
+    section#whatdo ul.nav li a {
+      color: #464547;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 15px; }
+    section#whatdo ul.nav li.active a {
+      background-color: #39c2d7;
+      color: white; }
+  section#whatdo .nav-tabs li a {
+    border-radius: 0;
+    margin-right: 0; }
+  section#whatdo .tab-content {
+    padding-top: 5%; }
+    section#whatdo .tab-content p {
+      text-align: center;
+      padding: 0 10% 0 10%;
+      font-size: 2rem; }
+    section#whatdo .tab-content .col-md-3, section#whatdo .tab-content .col-md-4 {
+      border: 1px solid #ccc;
+      height: 40vh;
+      text-align: center;
+      padding: 0; }
+      section#whatdo .tab-content .col-md-3 img, section#whatdo .tab-content .col-md-4 img {
+        width: 10em;
+        height: 15em; }
+      section#whatdo .tab-content .col-md-3 span, section#whatdo .tab-content .col-md-4 span {
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        width: 100%;
+        padding-top: 3%;
+        height: 50px;
+        border-top: 1px solid #ccc;
+        -webkit-transition: background-color 1.5s ease-out;
+        -moz-transition: background-color 1.5s ease-out;
+        -o-transition: background-color 1.5s ease-out;
+        transition: background-color 1.5s ease-out; }
+      section#whatdo .tab-content .col-md-3 span:hover, section#whatdo .tab-content .col-md-4 span:hover {
+        cursor: pointer;
+        background-color: #39c2d7;
+        color: white; }
+    section#whatdo .tab-content #menu1 {
+      padding: 0 15% 0 15%; }
+      section#whatdo .tab-content #menu1 span {
+        height: 70px; }
+    section#whatdo .tab-content #menu2 .row {
+      padding: 0; }
+    section#whatdo .tab-content #menu2 .row:last-child {
+      margin-top: 1%; }
+    section#whatdo .tab-content #menu2 .col-md-4 {
+      padding: 0;
+      height: 60vh; }
+      section#whatdo .tab-content #menu2 .col-md-4 div.inf {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0vh;
+        background-color: #39c2d7;
+        z-index: 100;
+        -webkit-transition: height 0.5s ease-out;
+        -moz-transition: height 0.5s ease-out;
+        -o-transition: height 0.5s ease-out;
+        transition: height 0.5s ease-out; }
+    section#whatdo .tab-content #menu2 span {
+      clear: both;
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      display: block;
+      z-index: 99;
+      background-color: #39c2d7;
+      font-size: 3rem;
+      font-weight: 700;
+      -webkit-transition: height 0.5s ease-out;
+      -moz-transition: height 0.5s ease-out;
+      -o-transition: height 0.5s ease-out;
+      transition: height 0.5s ease-out;
+      color: white; }
+    section#whatdo .tab-content #menu2 img {
+      width: 100%;
+      height: 60vh; }
+    section#whatdo .tab-content #menu2 .col-md-4:hover div.inf {
+      height: 60vh; }
+    section#whatdo .tab-content #menu2 .col-md-4:hover span {
+      height: 0;
+      color: transparent; }
+
+div.news {
+  width: 100%;
+  height: auto;
+  background-color: #39c2d7;
+  z-index: 100;
+  padding: 5%; }
+  div.news h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5%; }
+  div.news ul.nav {
+    width: 45%;
+    margin: 0 auto;
+    border-bottom: 0; }
+    div.news ul.nav li {
+      text-align: center;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      width: 200px;
+      height: 50px;
+      background-color: white; }
+    div.news ul.nav li a {
+      color: #464547;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 15px; }
+    div.news ul.nav li.active a {
+      background-color: #999999;
+      color: white; }
+  div.news .nav-tabs li a {
+    border-radius: 0;
+    margin-right: 0; }
+  div.news .tab-content {
+    padding-top: 5%; }
+    div.news .tab-content p {
+      text-align: center;
+      padding: 0 10% 0 10%;
+      font-size: 2rem; }
+    div.news .tab-content .slider {
+      width: 100%;
+      margin: 0 auto; }
+      div.news .tab-content .slider p {
+        background-color: white;
+        width: 35vh;
+        height: 40vh;
+        font-size: 2rem;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+        padding: 40% 3% 0 3%;
+        line-height: 20px; }
+        div.news .tab-content .slider p span {
+          font-size: 1.5rem;
+          font-weight: 300; }
+        div.news .tab-content .slider p time {
+          color: #39c2d7;
+          text-transform: uppercase; }
+    div.news .tab-content .slick-slide {
+      margin: 0px 20px; }
+    div.news .tab-content .slick-slide img {
+      width: 100%; }
+    div.news .tab-content .slick-prev:before, div.news .tab-content .slick-next:before {
+      color: black; }
+  div.news div#sli {
+    width: 100%;
+    height: 70vh;
+    background-color: #39c2d7;
+    z-index: 100;
+    padding: 0; }
+
+div#hand {
+  width: 100%;
+  height: 60vh;
+  background: url(../img/hand.jpg) bottom center; }
+  div#hand div {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(85, 181, 197, 0.7);
+    z-index: 99;
+    color: white;
+    padding: 5% 0 0 0;
+    line-height: 100px; }
+    div#hand div h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 6rem;
+      font-weight: 700; }
+    div#hand div p {
+      text-align: center;
+      font-size: 3rem; }
+      div#hand div p .glyphicon {
+        margin-left: 10px; }
+    div#hand div a {
+      background-color: #7f993a;
+      color: white;
+      font-size: 2rem;
+      padding: 1% 1% 1% 2%;
+      font-weight: 700;
+      text-decoration: none; }
+    div#hand div a:hover {
+      background-color: #a3c644; }
+
+.navbar-nav > li > .dropdown-menu {
+  position: absolute;
+  height: auto;
+  background-color: #464547;
+  left: -430%;
+  top: 170%;
+  width: 200vh;
+  padding: 10% 0 10% 210%; }
+  .navbar-nav > li > .dropdown-menu li {
+    display: inline-block;
+    width: 20%; }
+    .navbar-nav > li > .dropdown-menu li ul {
+      padding: 0; }
+      .navbar-nav > li > .dropdown-menu li ul li {
+        color: white;
+        display: block;
+        width: 100%;
+        letter-spacing: normal;
+        padding: 10% 0 0 8%; }
+        .navbar-nav > li > .dropdown-menu li ul li a {
+          font-size: 1.3rem;
+          text-decoration: none;
+          padding: 0;
+          color: #ccc; }
+    .navbar-nav > li > .dropdown-menu li a {
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: normal;
+      font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

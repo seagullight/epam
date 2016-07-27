@@ -14,42 +14,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
-	section#navigat {
 	
-	height: 60vh}
-section#navigat2 .col-md-2 {
-		height: 25vh
-	} 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	section#navigat {
 	
-	height: 55vh}
-section#navigat2 .col-md-2 {
-		height: 25vh
-	} 
-						
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px) {
-	section#navigat {
 	
-	height: 35vh}
-section#navigat2 .col-md-2 {
-		height: 16vh
-	}
-section#cont .col-md-4
-	{ padding: 0; }
-section#cont table
-{
-
-	position: relative;
-	width: 100%;
-	left: 0;
-}
 }
 
 
@@ -57,23 +32,15 @@ section#cont table
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-section#navigat {
-	
-	height: 35vh}
-section#navigat2 .col-md-2 {
-		height: 15vh
-	}
-section#navigat2 ul.nav_1 {background-color: white;}
+body .navbar-fixed-top {height: auto;}
 
-section#cont .col-md-4
-	{ padding: 0; }
-section#cont table
-{
+body .navbar-brand{width: 10rem}
+section#dnk{	margin-top: 50px; height: 110vh }
+section#dnk .col-md-8 { padding: 0 0 0 5%; }
+section#dnk .col-md-8 a.btn {width: 45%; font-size: 1rem;}
+section#dnk h1 {font-size: 3rem ;}
 
-	position: relative;
-	width: 100%;
-	left: 0;
-}
+
 }
 
 

@@ -1,109 +1,449 @@
 <!DOCTYPE html>
 <htm>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>epam</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    
-    
+
+
+
     <link href="css/style.css" rel="stylesheet" />
-   	<link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="libs/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet"/>
-  
-    
-	
+    <link href="libs/slider/slick/slic/slick.css" rel="stylesheet" />
+    <link href="libs/slider/slick/slic/slick-theme.css" rel="stylesheet" />
 
-	
-    
-  
-   
-    
+
+
+
+
+
+
+
 <!--[if lt IE 9]>
-                <script src="libs/html5shiv/es5-shim.min.js"></script>
-                <script src="libs/html5shiv/html5shiv.min.js"></script>
-                <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-                <script src="libs/respond/respond.min.js"></script>
-                [endif]-->    
+ <script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  [endif]-->    
+
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 226 80" enable-background="new 0 0 226 80" xml:space="preserve">
-<g>
-    <path fill="#464547" d="M42.9,35.8l0,14.5c0,3.7,1.8,5.5,5.5,5.5h1.6c3.7,0,5.5-1.8,5.5-5.5v-7.1h8.5V50c0,9.3-4.7,14.1-14.1,14.1
-        h-1.8c-9.3,0-14.1-4.7-14.1-13V15.5c0-10.4,4.7-15.2,14.1-15.2h1.8c9.3,0,14.1,4.7,14.1,14.1l0,21.3H42.9z M42.9,27.3h12.5V14.1
-        c0-3.7-1.8-5.5-5.5-5.5h-1.4c-3.7,0-5.5,1.8-5.5,5.5V27.3z"/>
-    <path fill="#464547" d="M69.8,1.1h8.8v4c2.1-2.2,5.7-4.7,10.7-4.7c7.5,0,11.2,5,11.2,12.3v39c0,7.4-3.7,12.3-11.2,12.3
-        c-5.1,0-8.6-2.4-10.7-4.5v20.1h-8.8V1.1z M78.6,52.5c2.4,2.1,5.2,3.2,8.1,3.2c3.2,0,5.1-1.5,5.1-5.1V13.8c0-3.6-1.8-5.1-5.1-5.1
-        c-2.9,0-5.7,1.2-8.1,3.2V52.5z"/>
-    <path fill="#464547" d="M105.8,41.7c0-7.7,2.5-10.8,9.2-13.1l11.8-4V14.1c0-3.7-1.8-5.7-5.5-5.7h-1.4c-3.7,0-5.5,2-5.5,5.7v8.8
-        h-8.5v-8.5c0-9.3,4.7-14.1,14.1-14.1h1.7c9.3,0,14.1,4.7,14.1,14.1v48.9h-8.8v-3.9c-2.4,2.3-5.7,4.6-10.7,4.6c-7,0-10.3-4-10.3-11
-        V41.7z M126.8,52.8V32.3l-8,3c-3.2,1.3-4.3,2.9-4.3,6.5v9.5c0,3,1.5,4.5,4.3,4.5C121.5,55.7,123.9,54.8,126.8,52.8z"/>
-    <path fill="#464547" d="M171,63.3h-8.8V13.2c0-3.1-1.5-4.5-4.2-4.5c-2.4,0-5,0.9-8.1,3.1v51.5h-8.8V1.1h8.8v4
-        c2.5-2.4,5.9-4.7,10.7-4.7c4.5,0,7.5,1.8,9.1,5.1c3.1-2.7,6.8-5.1,11.9-5.1c6.8,0,10.3,4.2,10.3,11v52h-8.8V13.2
-        c0-3.1-1.5-4.5-4.2-4.5c-2.4,0-5,0.9-8.1,3.1V63.3z"/>
-    <path fill="#00B5D1" d="M22.9,6.8v11.5L8.2,32.3l14.7,13.8v11.7L0.4,36.6v-8.4L22.9,6.8z"/>
-    <path fill="#00B5D1" d="M225.6,28.2v8.4l-22.5,21.2V46.1l14.7-13.8l-14.7-14.1V6.8L225.6,28.2z"/>
-</g>
-</svg></a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" style="float: left" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 226 80" enable-background="new 0 0 226 80" xml:space="preserve">
+         <g>
+          <path fill="#464547" d="M42.9,35.8l0,14.5c0,3.7,1.8,5.5,5.5,5.5h1.6c3.7,0,5.5-1.8,5.5-5.5v-7.1h8.5V50c0,9.3-4.7,14.1-14.1,14.1
+          h-1.8c-9.3,0-14.1-4.7-14.1-13V15.5c0-10.4,4.7-15.2,14.1-15.2h1.8c9.3,0,14.1,4.7,14.1,14.1l0,21.3H42.9z M42.9,27.3h12.5V14.1
+          c0-3.7-1.8-5.5-5.5-5.5h-1.4c-3.7,0-5.5,1.8-5.5,5.5V27.3z"/>
+          <path fill="#464547" d="M69.8,1.1h8.8v4c2.1-2.2,5.7-4.7,10.7-4.7c7.5,0,11.2,5,11.2,12.3v39c0,7.4-3.7,12.3-11.2,12.3
+          c-5.1,0-8.6-2.4-10.7-4.5v20.1h-8.8V1.1z M78.6,52.5c2.4,2.1,5.2,3.2,8.1,3.2c3.2,0,5.1-1.5,5.1-5.1V13.8c0-3.6-1.8-5.1-5.1-5.1
+          c-2.9,0-5.7,1.2-8.1,3.2V52.5z"/>
+          <path fill="#464547" d="M105.8,41.7c0-7.7,2.5-10.8,9.2-13.1l11.8-4V14.1c0-3.7-1.8-5.7-5.5-5.7h-1.4c-3.7,0-5.5,2-5.5,5.7v8.8
+          h-8.5v-8.5c0-9.3,4.7-14.1,14.1-14.1h1.7c9.3,0,14.1,4.7,14.1,14.1v48.9h-8.8v-3.9c-2.4,2.3-5.7,4.6-10.7,4.6c-7,0-10.3-4-10.3-11
+          V41.7z M126.8,52.8V32.3l-8,3c-3.2,1.3-4.3,2.9-4.3,6.5v9.5c0,3,1.5,4.5,4.3,4.5C121.5,55.7,123.9,54.8,126.8,52.8z"/>
+          <path fill="#464547" d="M171,63.3h-8.8V13.2c0-3.1-1.5-4.5-4.2-4.5c-2.4,0-5,0.9-8.1,3.1v51.5h-8.8V1.1h8.8v4
+          c2.5-2.4,5.9-4.7,10.7-4.7c4.5,0,7.5,1.8,9.1,5.1c3.1-2.7,6.8-5.1,11.9-5.1c6.8,0,10.3,4.2,10.3,11v52h-8.8V13.2
+          c0-3.1-1.5-4.5-4.2-4.5c-2.4,0-5,0.9-8.1,3.1V63.3z"/>
+          <path fill="#00B5D1" d="M22.9,6.8v11.5L8.2,32.3l14.7,13.8v11.7L0.4,36.6v-8.4L22.9,6.8z"/>
+          <path fill="#00B5D1" d="M225.6,28.2v8.4l-22.5,21.2V46.1l14.7-13.8l-14.7-14.1V6.8L225.6,28.2z"/>
+        </g>
+      </svg></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+
+        <li class="dropdown"><a href="#">решения</a>
+            
+
+
+            <ul class="dropdown-menu">
+          <li><a href="#">Пролграмное обеспечение</a>
+              <ul>
+                
+                <li><a href="">Разработка</a></li>
+                <li><a href="">Тестирование </a></li>
+                <li><a href="">Потдержка и развитиеf</a></li>
+                <li><a href="">Интеграция</a></li>
+                <li><a href="">Выделенные центры</a></li>
+
+              </ul>
+
+          </li>
+          <li><a href="#">Продвинутые технологии</a>
+               <ul>
+                
+                <li><a href="">Agile</a></li>
+                <li><a href="">Лаборатории инноваций</a></li>
+                <li><a href="">Интернет вещей</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                
+              </ul>
+          </li>
+          <li><a href="#">Умное Предприятие</a>
+ <ul>
+                
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                
+              </ul>
+
+          </li>
+          <li><a href="#">Цифровое взаимодействие</a>
+
+               <ul>
+                
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                <li><a href="">sfdsfsfsf</a></li>
+                
+              </ul>
+          </li>
+          
+        </ul>
+
+        </li>
         
-        <li><a href="#">решения</a></li>
-        <li><a href="#">отрасли</a></li> 
-        <li><a href="#">о нас</a></li> 
+
+
+
+
+
+
+
+
+
+
+        <li class="dropdown"><a href="#">отрасли</a>
+            <ul class="dropdown-menu" style="left: -570%">
+          <li><a href="#">Пролграмное обеспечение</a></li>
+          <li><a href="#">Продвинутые технологии</a></li>
+          <li><a href="#">Умное Предприятие</a></li>
+          <li><a href="#">Цифровое взаимодействие</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        </li> 
+        <li class="dropdown"><a href="#">о нас</a>
+            <ul class="dropdown-menu" style="left: -890%">
+          <li><a href="#">Пролграмное обеспечение</a></li>
+          <li><a href="#">Продвинутые технологии</a></li>
+          <li><a href="#">Умное Предприятие</a></li>
+          <li><a href="#">Цифровое взаимодействие</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        </li> 
         <li><a href="#">идеи и проекты</a></li> 
         <li><a href="#">карьера</a></li> 
         <li><a href="#">контакты</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-left">
         <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
-         <li><a href="#"><span class="glyphicon glyphicon-flag"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-flag"></span></a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 <div class="container-fluid">
-<section id="dnk">
+  <section id="dnk">
     <div class="row">
-        <div class="col-md-8">
-           <h1>ПРОГРАММИРО­ВА­НИЕ У НАС В ДНК.</h1>
-           <p>С 1993 года мы помогаем мировым лидерам придумывать, проектировать, разрабатывать и внедрять программное обеспечение, которое изменяет мир.</p>
-           <p><a class="btn" href="#">узнать больше<span class="glyphicon glyphicon-arrow-right"></span></a><a class="btn" href="#">что нового<span class="glyphicon glyphicon-arrow-right"></span></a></p>
-        </div>
-        <div class="col-md-4 hidden-md  hidden-sm  hidden-xs">
-            <div class="adve">
-                <h2>ЛУЧШИЙ ИТ-ПРОЕКТ ДЛЯ СТРАХОВЫХ КОМПАНИЙ</h2>
-                <p>Совместный проект EPAM и СПАО «Ингосстрах» признан лучшим на конкурсе Global CIO</p>
-                <a class="btn" href="#">подробнее<span class="glyphicon glyphicon-arrow-right"></span></a>
-            </div>
-        </div>
+      <div class="col-md-8">
+       <h1>ПРОГРАММИРО­ВА­НИЕ У НАС В ДНК.</h1>
+       <p>С 1993 года мы помогаем мировым лидерам придумывать, проектировать, разрабатывать и внедрять программное обеспечение, которое изменяет мир.</p>
+       <p><a class="btn" href="#">узнать больше<span class="glyphicon glyphicon-arrow-right"></span></a><a class="btn" href="#">что нового<span class="glyphicon glyphicon-arrow-right"></span></a></p>
+     </div>
+     <div class="col-md-4 hidden-md  hidden-sm  hidden-xs">
+      <div class="adve">
+        <h2>ЛУЧШИЙ ИТ-ПРОЕКТ ДЛЯ СТРАХОВЫХ КОМПАНИЙ</h2>
+        <p>Совместный проект EPAM и СПАО «Ингосстрах» признан лучшим на конкурсе Global CIO</p>
+        <a class="btn" href="#">подробнее<span class="glyphicon glyphicon-arrow-right"></span></a>
+      </div>
     </div>
+  </div>
 </section>
-<section id="whatdo"></section>
+<section id="whatdo">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">что мы делаем</a></li>
+    <li><a data-toggle="tab" href="#menu1">для кого</a></li>
+    <li><a data-toggle="tab" href="#menu2">наша команда</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <p>Мы разрабатываем технологии будущего сегодня. Наши знания, экспертиза и опыт в различных направлениях позволяют нам создавать для своих клиентов решения, которые выводят бизнес на новый уровень.</p>
+      <div class="row">
+        <div class="col-md-3"><img src="img/Core_Product__Coding.svg" /><span>Програмное обеспечение</span></div>
+        <div class="col-md-3"><img src="img/AdvancedTech__Advanced_tech.svg" /><span>Продвинутые технологии</span></div>
+
+        <div class="col-md-3"><img src="img/__business_intelligent.svg" /><span>Умное предприятие</span></div>
+        <div class="col-md-3"><img src="img/DE__Digital_Engagement.svg" /><span>Цифровое взаимодействие</span></div>
+
+      </div>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <p>Правильные технологии превращают бизнес-стратегии в результаты. Мы создаем полнофункциональные решения для самых разных отраслей – решения для успеха и движения вперед.</p>
+      <div class="row">
+        <div class="col-md-4"><img src="img/for1.svg" /><span>Банки и финансы</span></div>
+        <div class="col-md-4"><img src="img/for2.svg" /><span>Страхование</span></div>
+
+        <div class="col-md-4"><img src="img/for3.svg" /><span>Технологический сектор</span></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"><img src="img/for4.svg" /><span>Медиа и развлечения</span></div>
+        <div class="col-md-4"><img src="img/for5.svg" /><span>Медицина и биотехнологии</span></div>
+
+        <div class="col-md-4"><img src="img/for6.svg" /><span>Формирующиеся рынки</span></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"><img src="img/for7.svg" /><span>Розничная торговля и потребительские рынки</span></div>
+        <div class="col-md-4"><img src="img/for8.svg" /><span>Путешествия</span></div>
+
+        <div class="col-md-4"><img src="img/for9.svg" /><span>Топливно-энергетический комплекс</span></div>
+      </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <p>Мы больше, чем просто разработчики. Мы эксперты, которые помогают вывести ваш бизнес на новый уровень. Присоединяйтесь!</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="inf">
+
+          </div>
+          <img src="img/myimg.jpg" /><span>Разработчики</span></div>
+          <div class="col-md-4">
+            <div class="inf">
+
+            </div>
+            <img src="img/myimg.jpg" /><span>Тестировщики</span></div>
+
+            <div class="col-md-4">
+              <div class="inf">
+
+              </div><img src="img/myimg.jpg" /><span>Дизайнеры</span></div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="inf"></div>
+                <img src="img/myimg.jpg" /><span>Архитекторы</span>
+              </div>
+              <div class="col-md-4">
+                <div class="inf"></div>
+                <img src="img/myimg.jpg" /><span>Менеджеры<br /> проектов</span>
+              </div>
+
+              <div class="col-md-4">
+                <div class="inf"></div>
+                <img src="img/myimg.jpg" /><span>Лидеры</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div></div>
+
+
+
+    <div class="news">
+      <h2>новости и события</h2>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#press">пресс-релизы</a></li>
+        <li><a data-toggle="tab" href="#event">события</a></li>
+        <li><a data-toggle="tab" href="#smi">сми о нас</a></li>
+
+      </ul>
+
+      <div class="tab-content">
+        <div id="press" class="tab-pane fade in active">
+          <div class="regular slider">
+            <div>
+             <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br />РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br />РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br />РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br />РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br />РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+             <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+            <div>
+              <p><time>июнь/22/2016</time><br /><br /><br /> РТС-тендер: модернизация торговой площадки<br />
+              <span> EPAM помогает перевести имущественные торги в электронный формат. </span></p>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="event" class="tab-pane fade">
+          <div class="center slider">
+            <div>
+
+            </div>
+            <div>
+            <p>fefe ofeiofieofioe</p>
+            </div>
+            <div>
+              <p>fefe ofeiofieofioe</p>
+            </div>
+            <div>
+            <p>fefe ofeiofieofioe</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="smi" class="tab-pane fade">
+          <p>Мы больше, чем просто разработчики. Мы эксперты, которые помогают вывести ваш бизнес на новый уровень. Присоединяйтесь!</p>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div> 
+  <div id="sli">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/forslide.jpg" alt="...">
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img/forslid2.jpg" alt="...">
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img/forslid3.jpg" alt="...">
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+  </div> 
+
+  <div id="hand">
+  <div>
+    <h2>Есть вопросы?</h2>
+    <p>Просто напишите нам, и мы предоставим интересующую вас информацию.</p>
+
+<p><a href="">ОСТАВИТЬ ЗАЯВКУ<span class="glyphicon glyphicon-arrow-right"></span></a></p>
+  </div>  
+
+  </div>
+   
+</section>
+
+
+
 </div>
 
 <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="js/common.js"></script>
 <script src="libs/bootstrap/js/bootstrap.js"></script>
+<script src="libs/slider/slick/slic/slick.js"></script>
 <script type="text/javascript">
-    $(document).on('ready', function() {
-    
-      
+  $(document).on('ready', function() {
+    $(".regular").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5
     });
-  </script>   
+    
+
+  });
+</script>   
 </body>
 </html>
